@@ -4,6 +4,11 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
+import Details from "./TabComponents/Details";
+import Location from "./TabComponents/Location";
+import Menu from "./TabComponents/Menu";
+import Pictures from "./TabComponents/Pictures";
+
 interface TabPanelProps {
   children?: React.ReactNode;
   index: number;
