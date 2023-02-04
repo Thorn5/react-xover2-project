@@ -82,26 +82,51 @@ function Home() {
       {isLoading ? (
         <LoadingIndicator />
       ) : restaurants.length ? (
-        restaurants.map((restaurant) => {
-          <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea onClick={handleOnClick}>
-              <CardMedia
-                component="img"
-                height="140"
-                image={restaurant.image}
-                alt="Image of the Restaurant"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  {restaurant.name}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {restaurant.tags}
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>;
-        })
+        restaurantType ? (
+          restaurants.map((restaurant) => {
+            restaurant.tags.include(restaurantType) ? (
+              <Card sx={{ maxWidth: 345 }}>
+                <CardActionArea onClick={handleOnClick}>
+                  <CardMedia
+                    component="img"
+                    height="140"
+                    image={restaurant.image}
+                    alt="Image of the Restaurant"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      {restaurant.name}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      {restaurant.tags}
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            ) : null;
+          })
+        ) : (
+          restaurants.map((restaurant) => {
+            <Card sx={{ maxWidth: 345 }}>
+              <CardActionArea onClick={handleOnClick}>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image={restaurant.image}
+                  alt="Image of the Restaurant"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    {restaurant.name}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {restaurant.tags}
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>;
+          })
+        )
       ) : (
         <h1>An Error Has Occurred: {error}</h1>
       )}
