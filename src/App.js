@@ -1,10 +1,10 @@
 import "./App.css";
-import BasicTabs from "./components/TabComponent";
+import TabComponent from "./components/TabComponent";
 
 function App() {
   return (
     <div className="App">
-      <BasicTabs />
+      <TabComponent />
     </div>
   );
 }
