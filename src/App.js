@@ -1,14 +1,13 @@
 import "./App.css";
 import Sidebar from "./components/Sidebar";
-import TabComponent from "./components/TabComponent";
+import BasicTabs from "./components/TabComponent";
 import { Route, Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 function App() {
   return (
-    <Routes>
-      <Route path="/">
-        <Route index element={<Sidebar />} />
-      </Route>
-    </Routes>
+    <BrowserRouter>
+      <Route exact path="/" component={Sidebar} />
+    </BrowserRouter>
   );
 }
 
