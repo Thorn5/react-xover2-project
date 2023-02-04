@@ -4,26 +4,30 @@ import { NavLink, Outlet } from "react-router-dom";
 function Sidebar() {
   return (
     <aside className="sidebarNav">
-      <NavLink className="navlinks homepage" to="/">
+      <NavLink
+        className="navlinks homepage"
+        to=""
+        style={({ isActive }) => ({ color: isActive ? "#00bcd4" : null })}
+      >
         Homepage
       </NavLink>
       <hr />
-      <NavLink className="navlinks" to="/restaurant-one">
+      <NavLink className="navlinks" to="">
         Restaurant one
       </NavLink>
-      <NavLink className="navlinks" to="/restaurant-two">
+      <NavLink className="navlinks" to="">
         Restaurant two
       </NavLink>
-      <NavLink className="navlinks" to="/restaurant-three">
+      <NavLink className="navlinks" to="">
         Restaurant three
       </NavLink>
-      <NavLink className="navlinks" to="/restaurant-four">
+      <NavLink className="navlinks" to="">
         Restaurant four
       </NavLink>
-      <NavLink className="navlinks" to="/restaurant-five">
+      <NavLink className="navlinks" to="">
         Restaurant five
       </NavLink>
-      <NavLink className="navlinks" to="/restaurant-six">
+      <NavLink className="navlinks" to="">
         Restaurant six
       </NavLink>
       <Outlet />
