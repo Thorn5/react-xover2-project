@@ -1,7 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { Map, Marker, Popup, TileLayer } from "react-leaflet";
+import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import useFetch from "../useFetch";
 export default function Location() {
-  const [zoom, setZoom] = useState(13);
-  return <Map></Map>;
+  return (
+    <MapContainer center zoom={12} scrollWheelZoom={false}>
+      <TileLayer
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+      />
+      <Marker position>
+        <Popup>This is your location</Popup>
+      </Marker>
+    </MapContainer>
+  );
 }
