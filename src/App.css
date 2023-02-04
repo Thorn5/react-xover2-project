@@ -29,3 +29,17 @@
 .navlinks.homepage {
   font-size: large;
 }
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+h1 {
+  font-size: 3rem;
+}
