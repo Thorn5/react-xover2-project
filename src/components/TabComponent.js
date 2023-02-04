@@ -63,6 +63,7 @@ export default function BasicTabs() {
           <Tab label="Pictures" {...a11yProps(3)} />
         </Tabs>
       </Box>
+
       <TabPanel value={value} index={0}>
         <Details />
       </TabPanel>
