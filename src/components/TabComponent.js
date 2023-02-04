@@ -4,7 +4,10 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
-import RestaurantMock from "./RestaurantMock";
+import Details from "./TabComponents/Details";
+import Location from "./TabComponents/Location";
+import Menu from "./TabComponents/Menu";
+import Pictures from "./TabComponents/Pictures";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -61,17 +64,16 @@ export default function BasicTabs() {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        Item One
-        <RestaurantMock />
+        <Details />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+        <Location />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        <Menu />
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Item Four
+        <Pictures />
       </TabPanel>
     </Box>
   );
