@@ -1,15 +1,11 @@
-import {useState, useEffect} from "react"
+import { useState, useEffect } from "react";
 const [restaurants, setRestaurants] = useState([]);
 const [isLoading, setIsLoading] = useState(false);
 const [error, setError] = useState(null);
 
-
-
-
-
-export furlutfunction useFetch(url) {
-  useEffe(url)=> {
-    setIsLoadig(true);
+export default function useFetch(url) {
+  useEffect(() => {
+    setIsLoading(true);
     fetch(url)
       .then((response) => {
         if (!response.ok) {
@@ -25,20 +21,9 @@ export furlutfunction useFetch(url) {
       .catch((error) => {
         setError(`${error}`);
       })
-     .f(nally(() => {
-;     
-       (
- s    {restauran;
-  )aurantsn etIsLoading(false);
-     }ts, isLoading, error})(
-   ;  {restauran;
-  )aurantsn 
- },aurantsn {restaurants, isLoading, error}
- [ur(
- l    {restauran;
-ts, isLoading, error}  )aurantsn ])
-  retuts, isLoading, error}rn(
-      {restauran;
-  )aurantsn {restaurants, isLoading, error}ts, isLoading, error};
-  )aurantsn {restaurants, isLoading, error}
+      .finally(() => {
+        setIsLoading(false);
+      });
+  }, [url]);
+  return { restaurants, isLoading, error };
 }
