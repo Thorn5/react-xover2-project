@@ -4,14 +4,31 @@ import { NavLink } from "react-router-dom";
 export default function Sidebar() {
   return (
     <aside className="sidebarNav">
-      <NavLink>Homepage</NavLink>
+      <li>
+        <NavLink>Homepage</NavLink>
+      </li>
       <hr />
-      <NavLink>Restaurant one</NavLink>
-      <NavLink>Restaurant two</NavLink>
-      <NavLink>Restaurant three</NavLink>
-      <NavLink>Restaurant four</NavLink>
-      <NavLink>Restaurant five</NavLink>
-      <NavLink>Restaurant six</NavLink>
+      <li>
+        <NavLink>Restaurant one</NavLink>
+      </li>
+      <li>
+        <NavLink>Restaurant two</NavLink>
+      </li>
+      <li>
+        {" "}
+        <NavLink>Restaurant three</NavLink>
+      </li>
+      <li>
+        {" "}
+        <NavLink>Restaurant four</NavLink>
+      </li>
+      <li>
+        <NavLink>Restaurant five</NavLink>
+      </li>
+      <li>
+        {" "}
+        <NavLink>Restaurant six</NavLink>
+      </li>
     </aside>
   );
 }

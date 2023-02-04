@@ -55,7 +55,7 @@ export default function BasicTabs() {
           <Tab label="Item One" {...a11yProps(0)} />
           <Tab label="Item Two" {...a11yProps(1)} />
           <Tab label="Item Three" {...a11yProps(2)} />
-          <Tab label="Item Four" {...a11yProps(3)} />
+          <Tab label="Pink" {...a11yProps(3)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
@@ -68,7 +68,7 @@ export default function BasicTabs() {
         Item Three
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Item Four
+        Blue
       </TabPanel>
     </Box>
   );
