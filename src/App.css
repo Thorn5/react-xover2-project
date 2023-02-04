@@ -1,4 +1,11 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
 .App {
   text-align: center;
 }
-
+.sidebarNav {
+  width: 20%;
+}
