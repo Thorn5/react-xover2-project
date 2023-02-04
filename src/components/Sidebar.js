@@ -15,18 +15,15 @@ export default function Sidebar() {
         <NavLink>Restaurant two</NavLink>
       </li>
       <li>
-        {" "}
         <NavLink>Restaurant three</NavLink>
       </li>
       <li>
-        {" "}
         <NavLink>Restaurant four</NavLink>
       </li>
       <li>
         <NavLink>Restaurant five</NavLink>
       </li>
       <li>
-        {" "}
         <NavLink>Restaurant six</NavLink>
       </li>
     </aside>

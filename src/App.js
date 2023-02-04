@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Sidebar />} />
+        <Route index element={<Sidebar />} />
         <Route index element={<TabComponent />} />
       </Routes>
     </div>
