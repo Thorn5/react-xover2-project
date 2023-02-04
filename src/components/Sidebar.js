@@ -1,7 +1,9 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
+import useFetch from "./useFetch";
 
 function Sidebar() {
+  const { restaurants, isLoading, error } = useFetch();
   return (
     <aside className="sidebarNav">
       <NavLink className="navlinks homepage" to="/">

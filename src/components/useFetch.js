@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-const [restaurants, setRestaurants] = useState([]);
-const [isLoading, setIsLoading] = useState(false);
-const [error, setError] = useState(null);
 
 export default function useFetch(url) {
+  const [restaurants, setRestaurants] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
   useEffect(() => {
     setIsLoading(true);
     fetch(url)

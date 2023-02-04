@@ -1,6 +1,6 @@
 import "./App.css";
 import Sidebar from "./components/Sidebar";
-import BasicTabs from "./components/TabComponent";
+import TabComponent from "./components/TabComponent";
 import { Route, Routes } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 function App() {

@@ -4,6 +4,8 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
+// import RestaurantMock from "./RestaurantMock";
+
 interface TabPanelProps {
   children?: React.ReactNode;
   index: number;
@@ -52,19 +54,24 @@ export default function BasicTabs() {
           onChange={handleChange}
           aria-label="basic tabs example"
         >
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
+          <Tab label="Details" {...a11yProps(0)} />
+          <Tab label="Location" {...a11yProps(1)} />
+          <Tab label="Menu" {...a11yProps(2)} />
+          <Tab label="Pictures" {...a11yProps(3)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
         Item One
+        {/* <RestaurantMock /> */}
       </TabPanel>
       <TabPanel value={value} index={1}>
         Item Two
       </TabPanel>
       <TabPanel value={value} index={2}>
         Item Three
+      </TabPanel>
+      <TabPanel value={value} index={3}>
+        Item Four
       </TabPanel>
     </Box>
   );
