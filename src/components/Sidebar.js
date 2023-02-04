@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react";
 
 export default function Sidebar() {
   return (
