@@ -63,17 +63,18 @@ export default function BasicTabs() {
           <Tab label="Pictures" {...a11yProps(3)} />
         </Tabs>
       </Box>
+
       <TabPanel value={value} index={0}>
-        Item One
+        <Details />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+        <Location />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        <Menu />
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Item Four
+        <Pictures />
       </TabPanel>
     </Box>
   );
