@@ -6,7 +6,9 @@ import { BrowserRouter } from "react-router-dom";
 function App() {
   return (
     <BrowserRouter>
-      <Route exact path="/" component={Sidebar} />
+      <Routes>
+        <Route path="/" element={<Sidebar />} />
+      </Routes>
     </BrowserRouter>
   );
 }

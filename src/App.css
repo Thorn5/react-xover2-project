@@ -14,3 +14,14 @@
   height: 100vh;
   justify-content: space-around;
 }
+.sidebarNav .navlinks {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-weight: 700;
+}
+.navlinks.homepage {
+  font-size: large;
+  font-weight: 900;
+}
