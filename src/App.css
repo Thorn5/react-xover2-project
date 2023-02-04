@@ -7,5 +7,10 @@
   text-align: center;
 }
 .sidebarNav {
+  border-right: solid 1px black;
+  flex-direction: column;
+  display: flex;
   width: 20%;
+  height: 100vh;
+  justify-content: space-around;
 }

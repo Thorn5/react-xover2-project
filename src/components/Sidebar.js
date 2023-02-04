@@ -1,16 +1,17 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Sidebar() {
   return (
     <aside className="sidebarNav">
-      <h3>Homepage</h3>
+      <NavLink>Homepage</NavLink>
       <hr />
-      <p>Restourant one</p>
-      <p>Restourant two</p>
-      <p>Restourant three</p>
-      <p>Restourant four</p>
-      <p>Restourant five</p>
-      <p>Restourant six</p>
+      <NavLink>Restaurant one</NavLink>
+      <NavLink>Restaurant two</NavLink>
+      <NavLink>Restaurant three</NavLink>
+      <NavLink>Restaurant four</NavLink>
+      <NavLink>Restaurant five</NavLink>
+      <NavLink>Restaurant six</NavLink>
     </aside>
   );
 }
