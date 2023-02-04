@@ -5,10 +5,8 @@ import { Route, Routes } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Routes>
-        <Route index element={<Sidebar />} />
-        <Route index element={<TabComponent />} />
-      </Routes>
+      <Sidebar />
+      <TabComponent />
     </div>
   );
 }
