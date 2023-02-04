@@ -4,6 +4,7 @@ export default function Sidebar() {
   return (
     <aside className="sidebarNav">
       <h3>Homepage</h3>
+      <hr />
       <p>Restourant one</p>
       <p>Restourant two</p>
       <p>Restourant three</p>
