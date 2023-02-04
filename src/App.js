@@ -1,13 +1,16 @@
-import './App.css';
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
 
 function App() {
   return (
-    <div className="App">
-    <h3>Main Branch</h3>
-    <p>This app was created using a clean bootstrapped react template.</p>
-    <p>The stock react App.js code has been removed.</p>
-    </div>
+    <Routes>
+      <Route path="/">
+        <Route index element={<Home />} />
+      </Route>
+    </Routes>
   );
 }
 
 export default App;
+//<Route path=":restaurantName" element={<RestaurantDetails />} />
