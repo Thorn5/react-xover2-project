@@ -4,10 +4,11 @@ import TabComponent from "./components/TabComponent";
 import { Route, Routes } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <Sidebar />
-      <TabComponent />
-    </div>
+    <Routes>
+      <Route path="/">
+        <Route index element={<Sidebar />} />
+      </Route>
+    </Routes>
   );
 }
 
